@@ -6,19 +6,19 @@
     <title>AlloySites | Custom Web Design in Norfolk</title>
     <meta name="description" content="Affordable, custom-coded websites for Norfolk businesses. Coming soon.">
     
-    <!-- Google Fonts: Oswald (Headings) and Inter (Body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --bg-color: #121212;
-            --card-bg: #1E1E1E;
-            --text-main: #F5F5F5;
-            --text-muted: #A0A0A0;
-            --accent-color: #00D4FF; /* Electric Blue */
-            --accent-glow: rgba(0, 212, 255, 0.3);
+            /* Branding Colors from style.css */
+            --bg-dark: #0F172A;       /* Deep Midnight Blue */
+            --bg-card: #1E293B;       /* Lighter Navy */
+            --primary: #F59E0B;       /* Amber Gold */
+            --primary-glow: rgba(245, 158, 11, 0.4);
+            --text-white: #F8FAFC;
+            --text-muted: #94A3B8;
         }
 
         * {
@@ -28,9 +28,9 @@
         }
 
         body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+            font-family: 'Plus Jakarta Sans', sans-serif;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -41,7 +41,7 @@
             position: relative;
         }
 
-        /* Industrial Background Grid Effect */
+        /* Industrial Background Grid Effect - Adjusted for Navy Blue */
         body::before {
             content: "";
             position: absolute;
@@ -63,16 +63,18 @@
         }
 
         h1 {
-            font-family: 'Oswald', sans-serif;
+            font-family: 'Outfit', sans-serif;
             font-size: 4rem;
+            font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: -1px;
             margin-bottom: 0.5rem;
             line-height: 1;
+            color: #fff;
         }
 
         h1 span {
-            color: var(--accent-color);
+            color: var(--primary);
         }
 
         p.subtitle {
@@ -84,11 +86,11 @@
 
         .status-badge {
             display: inline-block;
-            background: rgba(0, 212, 255, 0.1);
-            color: var(--accent-color);
-            border: 1px solid var(--accent-color);
+            background: rgba(245, 158, 11, 0.1); /* Low opacity amber */
+            color: var(--primary);
+            border: 1px solid var(--primary);
             padding: 0.5rem 1rem;
-            border-radius: 4px;
+            border-radius: 20px; /* More rounded to match new style */
             font-size: 0.9rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
@@ -98,23 +100,23 @@
 
         .btn {
             display: inline-block;
-            background-color: var(--accent-color);
-            color: #000;
+            background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+            color: #fff;
             padding: 1rem 2rem;
-            font-family: 'Oswald', sans-serif;
+            font-family: 'Outfit', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 8px;
             letter-spacing: 1px;
             transition: all 0.3s ease;
-            box-shadow: 0 0 15px var(--accent-glow);
+            box-shadow: 0 4px 20px var(--primary-glow);
+            border: none;
         }
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 0 25px var(--accent-glow);
-            background-color: #fff;
+            box-shadow: 0 8px 30px var(--primary-glow);
         }
 
         footer {
@@ -148,9 +150,8 @@
             No templates. Just performance.
         </p>
 
-        <!-- Replace 'your-email' with your actual email address -->
-        <a href="mailto:your-email@example.com?subject=Project%20Inquiry" class="btn">
-            Get a Quote
+        <a class="btn">
+            Email me: recovermarkel@gmail.com
         </a>
     </div>
 
