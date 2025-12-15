@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>AlloySites | Custom Web Design in Norfolk</title>
     <meta name="description" content="Affordable, custom-coded websites for Norfolk businesses. Coming soon.">
-    
+    <link rel="canonical" href="https://alloysites.com">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚧</text></svg>">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alloysites.com">
+    <meta property="og:title" content="AlloySites | Custom Web Design in Norfolk">
+    <meta property="og:description" content="Affordable, custom-coded websites for Norfolk businesses. Coming soon.">
+    <meta property="og:image" content="https://alloysites.com/images/bannerwhite.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alloysites.com">
+    <meta property="twitter:title" content="AlloySites | Custom Web Design in Norfolk">
+    <meta property="twitter:description" content="Affordable, custom-coded websites for Norfolk businesses. Coming soon.">
+    <meta property="twitter:image" content="https://alloysites.com/images/bannerwhite.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            /* Branding Colors from style.css */
+            /* Branding Colors */
             --bg-dark: #0F172A;       /* Deep Midnight Blue */
             --bg-card: #1E293B;       /* Lighter Navy */
             --primary: #F59E0B;       /* Amber Gold */
@@ -41,7 +57,7 @@
             position: relative;
         }
 
-        /* Industrial Background Grid Effect - Adjusted for Navy Blue */
+        /* Industrial Background Grid Effect */
         body::before {
             content: "";
             position: absolute;
@@ -60,6 +76,14 @@
             padding: 2rem;
             max-width: 600px;
             animation: fadeIn 1.5s ease-out;
+        }
+
+        /* Logo Styling */
+        .brand-logo {
+            display: block;
+            max-width: 100px;  /* Adjusts the size of the logo above the text */
+            height: auto;
+            margin: 0 auto 1.5rem auto;
         }
 
         h1 {
@@ -86,11 +110,11 @@
 
         .status-badge {
             display: inline-block;
-            background: rgba(245, 158, 11, 0.1); /* Low opacity amber */
+            background: rgba(245, 158, 11, 0.1);
             color: var(--primary);
             border: 1px solid var(--primary);
             padding: 0.5rem 1rem;
-            border-radius: 20px; /* More rounded to match new style */
+            border-radius: 20px;
             font-size: 0.9rem;
             font-weight: 600;
             margin-bottom: 1.5rem;
@@ -112,6 +136,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 20px var(--primary-glow);
             border: none;
+            cursor: pointer;
         }
 
         .btn:hover {
@@ -135,6 +160,7 @@
         @media (max-width: 600px) {
             h1 { font-size: 2.5rem; }
             p.subtitle { font-size: 1rem; }
+            .brand-logo { max-width: 80px; }
         }
     </style>
 </head>
@@ -143,6 +169,8 @@
     <div class="container">
         <div class="status-badge">Under Construction</div>
         
+        <img src="images/logo.png" alt="AlloySites Logo" class="brand-logo">
+
         <h1>Alloy<span>Sites</span></h1>
         
         <p class="subtitle">
@@ -150,7 +178,7 @@
             No templates. Just performance.
         </p>
 
-        <a class="btn">
+        <a href="mailto:recovermarkel@gmail.com" class="btn">
             Email me: recovermarkel@gmail.com
         </a>
     </div>
